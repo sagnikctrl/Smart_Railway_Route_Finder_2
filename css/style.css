@@ -1,0 +1,19 @@
+/* ---- Route finder layout ---- */
+.controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 16px; }
+.controls label { font-weight: bold; }
+.controls select { padding: 8px; font-size: 1rem; }
+
+.result-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 700px) { .result-grid { grid-template-columns: 1fr; } }
+
+.result-box { border: 1px solid #c9d6e2; border-radius: 8px; padding: 14px; }
+.result-box h3 { margin: 0 0 4px 0; }
+.result-box .summary { margin: 0 0 10px 0; font-weight: bold; color: #0d5296; }
+.result-box ol { margin: 0; padding-left: 22px; }
+.result-box li { padding: 3px 0; }
+
+.message { padding: 10px; background: #fff4e5; border-radius: 6px; }
+.note { font-size: 0.9rem; color: #555; margin-top: 12px; }
+
+details summary { cursor: pointer; font-weight: bold; margin-bottom: 8px; }
+pre { white-space: pre-wrap; overflow-x: auto; }
